@@ -1,0 +1,43 @@
+
+C:\Windows\System32\drivers\etc\Host
+
+Open Notepad++ Administrator
+
+
+127.0.0.1	www.youtube.com
+127.0.0.1	youtube.com
+127.0.0.1 	https://youtube.com
+127.0.0.1	https://www.youtube.com
+
+192.168.100.100		www.youtube.com
+192.168.100.100		youtube.com
+192.168.100.100		https://youtube.com
+192.168.100.100		https://www.youtube.com
+
+127.0.0.1			www.poki games.com
+127.0.0.1			https://poki.com/
+127.0.0.1 			https://poki.com
+
+192.168.100.100		www.poki games.com
+192.168.100.100		https://poki.com/
+192.168.100.100		https://poki.com
+
+127.0.0.1	https://openai.com
+127.0.0.1	https://chatgpt.com
+
+192.168.100.100		https://openai.com
+192.168.100.100		https://chatgpt.com
+		
+127.0.0.1		https://web.whatsapp.com
+
+192.168.100.100		https://web.whatsapp.com	
+
+127.0.0.1		https://www.facebook.com	
+
+192.168.100.100		https://www.facebook.com			
+						
+
+
+
+
+

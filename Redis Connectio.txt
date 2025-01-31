@@ -1,0 +1,9 @@
+1) Mongod server connection start (Open This Path = Downloads/mongodb-linux-x86_64-en../bin/ & OPEN TERMINAL)
+
+	$ pwd
+	$ ./mongod --depath=/home/infoway/db1/ --bind_ip=< IP ADDRESS >
+	
+2) Redis Server start (Open New Tap)
+
+	$ cd redis-7.0.15/src/
+	$ ./redis-server ../redis.conf

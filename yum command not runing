@@ -1,0 +1,47 @@
+
+yum command not working 
+
+solution:
+
+step-1
+*Command Run👇
+[root@cdac1 cdac]# nano /etc/yum.repos.d/CentOS-Base.repo 
+
+
+*Edit baseurl Line
+
+
+[base]
+name=CentOS-$releasever - Base
+#mirrorlist=http://#mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+baseurl=http://vault.centos.org/7.9.2009/os/$basearch/ 👈
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+#mirrorlist=http://#mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+baseurl=http://vault.centos.org/7.9.2009/updates/$basearch/ 👈
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+#mirrorlist=http://#mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+baseurl=http://vault.centos.org/7.9.2009/extras/$basearch/ 👈
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+
+SAVE EDIT FILE : Ctrl + X + Y + Enter
+
+Three Command Run 
+
+[root@cdac1 cdac]# sudo yum clean all 
+[root@cdac1 cdac]# sudo yum makecache 
+[root@cdac1 cdac]# sudo yum update 
+
+
+ 
